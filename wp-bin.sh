@@ -4,14 +4,14 @@
 ## The ${var%pattern} format will remove the shortest match of
 ## pattern from the end of the string. Here, it will remove the
 ## script's name,. leaving only the directory.
-mydir="${0%/*}"
+mydir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd )"
 
-source "$mydir"/utils/command-exists.sh
-source "$mydir"/utils/download.sh
-source "$mydir"/utils/in-array.sh
-source "$mydir"/utils/go-to-root.sh
-source "$mydir"/utils/get-package-version-number.sh
-source "$mydir"/utils/message.sh
-source "$mydir"/utils/check-for-clean-cwd.sh
-source "$mydir"/utils/reset-cwd.sh
-source "$mydir"/utils/rezip-with-version.sh
+source "$mydir"/bin/utils/command-exists.sh
+source "$mydir"/bin/utils/download.sh
+source "$mydir"/bin/utils/in-array.sh
+source "$mydir"/bin/utils/go-to-root.sh
+source "$mydir"/bin/utils/get-package-version-number.sh
+source "$mydir"/bin/utils/message.sh
+source "$mydir"/bin/utils/check-for-clean-cwd.sh
+source "$mydir"/bin/utils/reset-cwd.sh
+source "$mydir"/bin/utils/rezip-with-version.sh
