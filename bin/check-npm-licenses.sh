@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load wp-bin
-source "$(dirname "$0")/wp-bin/wp-bin.sh"
+source "$(pwd)/bin/wp-bin/wp-bin.sh"
 
 ALLOWED_LICENSES=(
 	"GPL-2.0-or-later"

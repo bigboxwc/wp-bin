@@ -5,7 +5,7 @@ NVM_VERSION="v0.33.8"
 set -e
 
 # Load wp-bin
-source "$(dirname "$0")/wp-bin/wp-bin.sh"
+source "$(pwd)/bin/wp-bin/wp-bin.sh"
 
 # Load NVM
 if [ -n "$NVM_DIR" ]; then
