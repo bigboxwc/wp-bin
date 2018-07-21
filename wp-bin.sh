@@ -1,9 +1,6 @@
 #!/bash
 
-## Set mydir to the directory containing the script
-## The ${var%pattern} format will remove the shortest match of
-## pattern from the end of the string. Here, it will remove the
-## script's name,. leaving only the directory.
+# Set mydir to the directory containing the script
 mydir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd )"
 
 source "$mydir"/bin/utils/command-exists.sh
